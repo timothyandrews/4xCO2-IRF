@@ -38,23 +38,19 @@ The difference between the 4co2 and standard fluxes give the 4xCO2 IRF.
 
 ## Data files
 
-The data files have been produced using idl_create_fluxes.pro.
+The data files have been produced using `idl_create_fluxes.pro`.
 
-### Monthly global mean fluxes from the standard amip run:
-HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_FLUXES.csv
+| Filename | Description |
+| -------- | ----------- |
+| `HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_FLUXES.csv` | Monthly global mean fluxes from amip run |
+| `HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_4xCO2_FLUXES.csv` | Monthly global mean fluxes from 4xCO2 call |
+| `HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_4xCO2_IRF_TOA_MONTHLY.csv` | Monthly global mean TOA 4xCO2 IRF (+ve down) |
+| `HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_4xCO2_IRF_TOA_TIMEMEAN.csv` | Timemean TOA 4xCO2 IRF (+ve down) |
 
-### Monthly global mean fluxes from the 4xCO2 call to radiation:
-HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_4xCO2_FLUXES.csv
-
-### Monthly global mean TOA 4xCO2 IRF (i.e. the differnce between the above):
-HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_4xCO2_IRF_TOA_MONTHLY.csv
-
-### Timemean TOA 4xCO2 IRF (+ve downwards):
-HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_4xCO2_IRF_TOA_TIMEMEAN.csv
 
 ## 4xCO2 TOA IRF
 
-The 4xCO2 time-mean global-mean IRF are summarised to be:
+The 4xCO2 time-mean TOA global-mean IRF (in Wm-2) are summarised to be:
 
 | NET | LW | LWcs | LWcre | SW | SWcs | SWcre |
 | --- | -- | ---- | ----- | -- | ---- | ----- |
