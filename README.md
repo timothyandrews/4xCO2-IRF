@@ -1,8 +1,14 @@
 # 4xCO2-IRF
 
-This repositry calculates the TOA and surface radiative fluxes from the HadGEM3-GC3.1-LL amip r5i1p1f3 simulation, both for the advancing call to radiation, and the double (non-advancing) call with 4xCO2.  The difference between these fluxes gives the 4xCO2 instantaneous radiative forcing (IRF).
+This repository calculates the TOA and surface radiative fluxes from the HadGEM3-GC3.1-LL amip r5i1p1f3 simulation, both for the advancing call to radiation, and the double (non-advancing) call with 4xCO2.  The difference between these fluxes gives the 4xCO2 instantaneous radiative forcing (IRF).
 
 **Note: These are not our official CMIP6 numbers since the diagnostics have not yet gone through internal scientific review.**
+
+Tim Andrews and Alejandro Bodas-Salecdo.
+
+Met Office Hadley Centre.
+
+November 2019.
 
 ## Data description
 
@@ -29,7 +35,10 @@ The 4xCO2 calls to radiation follow the same names with "4co2" appended, except 
 
 The difference between the 4co2 and standard fluxes give the 4xCO2 IRF.
 
+
 ## Data files
+
+The data files have been produced using idl_create_fluxes.pro.
 
 ### Monthly global mean fluxes from the standard amip run:
 HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_FLUXES.csv
@@ -37,7 +46,7 @@ HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_FLUXES.csv
 ### Monthly global mean fluxes from the 4xCO2 call to radiation:
 HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_4xCO2_FLUXES.csv
 
-### Monthly global mean 4xCO2 IRF (i.e. the differnce between the above):
+### Monthly global mean TOA 4xCO2 IRF (i.e. the differnce between the above):
 HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_4xCO2_IRF_TOA_MONTHLY.csv
 
 ### Timemean TOA 4xCO2 IRF (+ve downwards):
@@ -49,4 +58,4 @@ The 4xCO2 time-mean global-mean IRF are summarised to be:
 
 | NET | LW | LWcs | LWcre | SW | SWcs | SWcre |
 | --- | -- | ---- | ----- | -- | ---- | ----- |
-| 4.35171 | 3.99687 | 5.22771 | -1.23085 | 0.354840 | 0.224545 | 0.130296 |
+| 4.35 | 4.00 | 5.23 | -1.23 | 0.35 | 0.22 | 0.13 |
