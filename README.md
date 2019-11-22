@@ -12,7 +12,7 @@ November 2019.
 
 ## Data description
 
-The simulation runs from Jan 1879 through to Dec 2014, i.e. 36 complete years (432 months).  The time coordinate is months since Jan 1979.
+The simulation runs from Jan 1979 through to Dec 2014, i.e. 36 complete years (432 months), following CMIP6 protocols (Eyring et al., 2016; GMD).  The time coordinate is months since Jan 1979.
 
 The variable names follow CMIP6 diagnostics:
 
@@ -31,7 +31,7 @@ The variable names follow CMIP6 diagnostics:
 | rlds | SRF downwelling LW |
 | rldscs | SRF downwelling LW |
 
-The 4xCO2 calls to radiation follow the same names with "4co2" appended, except rsdt is not included since that is identical between both calls.
+The 4xCO2 calls to radiation follow the same names with "4co2" appended, except rsdt is not included since that is identical between both calls.  These diagnostics form part of CFMIP contribution to CMIP6 (see Webb et al., 2017; GMD).
 
 The difference between the 4co2 and standard fluxes give the 4xCO2 IRF.
 
