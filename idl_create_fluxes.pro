@@ -20,7 +20,7 @@ PRO idl_create_fluxes
 
  ; write the 1x fluxes to a csv file
  t=INDGEN(432)  ; time,t, equals months since Jan 1979.
- headers=['month','rsdt','rsut','rsutcs','rsus','rsuscs','rsds','rsdscs','rlut','rlutcs','rlus','rlds','rldscs']
+ headers=['month','rsdt','rsut','rsutcs','rsus','rsuscs','rsds','rsdscs','rlut','rlutcs','rlus','rlds','rldscs,']
  data_to_write=TRANSPOSE([[t],[rsdt],[rsut],[rsutcs],[rsus],[rsuscs],[rsds],[rsdscs],[rlut],[rlutcs],[rlus],[rlds],[rldscs]])
  WRITE_CSV_DATA,data_to_write,headers,filename='HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_FLUXES.csv'
 
@@ -39,7 +39,7 @@ PRO idl_create_fluxes
 
  ; write the 4x fluxes to a csv file
  t=INDGEN(432)  ; time,t, equals months since Jan 1979.
- headers=['month','rsut4co2','rsutcs4co2','rsus4co2','rsuscs4co2','rsds4co2','rsdscs4co2','rlut4co2','rlutcs4co2','rlus4co2','rlds4co2','rldscs4co2']
+ headers=['month','rsut4co2','rsutcs4co2','rsus4co2','rsuscs4co2','rsds4co2','rsdscs4co2','rlut4co2','rlutcs4co2','rlus4co2','rlds4co2','rldscs4co2,']
  data_to_write=TRANSPOSE([[t],[rsut4co2],[rsutcs4co2],[rsus4co2],[rsuscs4co2],[rsds4co2],[rsdscs4co2],[rlut4co2],[rlutcs4co2],[rlus4co2],[rlds4co2],[rldscs4co2]])
  WRITE_CSV_DATA,data_to_write,headers,filename='HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_4xCO2_FLUXES.csv'
 
@@ -54,7 +54,7 @@ PRO idl_create_fluxes
 
  ; write the TOA monthly 4xCO2 IRF to a csv file
  t=INDGEN(432)  ; time,t, equals months since Jan 1979.
- headers=['month','NET_4xCO2_IRF_TOA','LW_4xCO2_IRF_TOA','LWcs_4xCO2_IRF_TOA','LWcre_4xCO2_IRF_TOA','SW_4xCO2_IRF_TOA','SWcs_4xCO2_IRF_TOA','SWcre_4xCO2_IRF_TOA']
+ headers=['month','NET_4xCO2_IRF_TOA','LW_4xCO2_IRF_TOA','LWcs_4xCO2_IRF_TOA','LWcre_4xCO2_IRF_TOA','SW_4xCO2_IRF_TOA','SWcs_4xCO2_IRF_TOA','SWcre_4xCO2_IRF_TOA,']
  data_to_write=TRANSPOSE([[t],[irf4co2_toa_NET],[irf4co2_toa_LW],[irf4co2_toa_LWcs],[irf4co2_toa_LWcre],[irf4co2_toa_SW],[irf4co2_toa_SWcs],[irf4co2_toa_SWcre]])
  WRITE_CSV_DATA,data_to_write,headers,filename='HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_4xCO2_IRF_TOA_MONTHLY.csv'
 
@@ -68,7 +68,7 @@ PRO idl_create_fluxes
  irf4co2_toa_mean_SWcre=MEAN(irf4co2_toa_SWcre)
 
  ; write the TOA time-mean 4xCO2 IRF to a csv file
- headers=['NET_4xCO2_IRF_TOA','LW_4xCO2_IRF_TOA','LWcs_4xCO2_IRF_TOA','LWcre_4xCO2_IRF_TOA','SW_4xCO2_IRF_TOA','SWcs_4xCO2_IRF_TOA','SWcre_4xCO2_IRF_TOA']
+ headers=['NET_4xCO2_IRF_TOA','LW_4xCO2_IRF_TOA','LWcs_4xCO2_IRF_TOA','LWcre_4xCO2_IRF_TOA','SW_4xCO2_IRF_TOA','SWcs_4xCO2_IRF_TOA','SWcre_4xCO2_IRF_TOA,']
  data_to_write=TRANSPOSE([[irf4co2_toa_mean_NET],[irf4co2_toa_mean_LW],[irf4co2_toa_mean_LWcs],[irf4co2_toa_mean_LWcre],[irf4co2_toa_mean_SW],[irf4co2_toa_mean_SWcs],[irf4co2_toa_mean_SWcre]])
  WRITE_CSV_DATA,data_to_write,headers,filename='HadGEM3-GC31-LL_amip_r5i1p1f3_gn_197901-201412_4xCO2_IRF_TOA_TIMEMEAN.csv'
 
