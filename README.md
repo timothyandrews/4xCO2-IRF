@@ -1,6 +1,6 @@
 # 4xCO2-IRF
 
-This repository calculates the TOA and surface radiative fluxes from the HadGEM3-GC3.1-LL amip r5i1p1f3 simulation, both for the advancing call to radiation, and the double (non-advancing) call with 4xCO2.  The difference between these fluxes gives the 4xCO2 instantaneous radiative forcing (IRF).
+This repository calculates the TOA & surface radiative fluxes from the HadGEM3-GC3.1-LL amip r5i1p1f3 simulation, both for the advancing call to radiation, and the double (non-advancing) call with 4xCO2.  The difference between these fluxes gives the 4xCO2 instantaneous radiative forcing (IRF).
 
 **Note: These are not our official CMIP6 numbers since the diagnostics have not yet gone through internal scientific review.**
 
